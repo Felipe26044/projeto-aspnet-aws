@@ -1,13 +1,16 @@
 using Scalar.AspNetCore;
 
-var builder = WebApplication.CreateBuilder(args);
-
+{
+  "ConnectionStrings": {
+    "BDClientes": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BDClientes;Integrated Security=True"
+  }
+}
 builder.Services.AddControllers();
-builder.Services.AddOpenApi();
+builder.Services.AddOpenApi(); // <-- Corrigido aqui (estava ?.lder)
 
 builder.Services.AddMemoryCache();
 
-builder.Services.AddEndpointsApiExplorer(); 
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();

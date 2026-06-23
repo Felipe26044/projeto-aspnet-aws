@@ -2,20 +2,6 @@
 using Microsoft.Data.SqlClient;
 using System.Data;
 
-{
-    "ConnectionStrings": {
-        "BDClientes": "Data Source=(localdb)\\MSSQLLocalDB;
-  
-    Initial Catalog = BDClientes; Integrated Security = True"
-    }
-}
-
-Modificando o controlador:
-
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
-using System.Data;
-
 namespace ProjetoAWS.Controllers
 {
     [Route("api/v1/clientes")]

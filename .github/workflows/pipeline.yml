@@ -8,7 +8,7 @@ on:
 
 env:
   AWS_APPLICATION_NAME: 'projeto-aspnet-aws'
-  AWS_ENVIRONMENT_NAME: 'Projeto-aspnet-aws-env'
+  AWS_ENVIRONMENT_NAME: 'projeto-aspnet-aws-felipe'
   AWS_REGION: 'us-east-2'
 
 jobs:
